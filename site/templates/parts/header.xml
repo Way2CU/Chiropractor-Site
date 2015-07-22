@@ -15,7 +15,6 @@
 					class="logo"
 					cms:eval="href"
 					>
-					<cms:text constant="site_title"/>
 				</a>
 
 				<cms:if condition="$section == 'home' or _MOBILE_VERSION">
