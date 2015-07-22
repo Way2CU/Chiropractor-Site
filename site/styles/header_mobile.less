@@ -37,6 +37,10 @@ header {
 	right: 0px;
 
 	background-color: @color_button;
+	background-image: url(../images/mobile-header.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100% auto;
 	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
 
 	-webkit-transform: translateZ(0);
@@ -55,8 +59,8 @@ header section {
 }
 
 header.home section {
-	padding-top: 3em;
-	padding-bottom: 3em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	text-align: center;
 }
 
@@ -65,9 +69,9 @@ header a.logo {
 	margin-bottom: 0.2em;
 	padding-left: 1.2em;
 
-	background-image: url(../images/logo.svg);
+	background-image: url(../images/new-logo.svg);
 	background-repeat: no-repeat;
-	background-size: 1em 1em;
+	background-size: 250px 50px;
 	background-position: left center;
 
 	color: @color_button_text;
@@ -77,18 +81,21 @@ header a.logo {
 	line-height: 100%;
 	text-decoration: none;
 	text-transform: uppercase;
+
+
 }
 
 header.home a.logo {
 	color: @color_title;
+	width: 250px;
+	height: 70px;
 }
 
 header.home a.logo {
-	margin-bottom: 0.4em;
 	padding-left: 0px;
-	padding-top: 3.4em;
-
-	background-size: 3em;
+	margin-top: 100px;
+	margin-bottom: 1em;
+	background-size: 250px 70px;
 	background-position: center top;
 }
 
@@ -106,7 +113,12 @@ header h1 {
 }
 
 header.home h1 {
-	color: @color_title;
+	margin-left: auto;
+	margin-right: auto;
+	color: #33485d;
+	font-size: 1.5em;
+	font-weight: 100;
+	width: 90%;
 }
 
 /**
@@ -117,8 +129,8 @@ header form {
 	max-height: 0px;
 	padding: 0em 1em;
 
-	background-color: @color_form;
-	color: @color_header_text;
+	background-color: @color_element;
+	color: @color_title;
 	text-align: center;
 
 	overflow: hidden;
@@ -132,8 +144,8 @@ header form.visible {
 
 header.home form {
 	max-height: none;
-	padding-top: 2em;
-	padding-bottom: 3em;
+	padding-top: 0em;
+	padding-bottom: 1em;
 }
 
 header form label {
@@ -156,7 +168,7 @@ header form div.vehicle_type > span {
 header.home form > span,
 header.home form div.vehicle_type > span {
 	display: block;
-	padding-bottom: 5px;
+	padding-bottom: 1em;
 }
 
 header form div.vehicle_type label {
@@ -255,16 +267,18 @@ header.home form div.vehicle_type input[value=truck]:checked + span:after {
 }
 
 header form > label {
+	display: inline-block;
+	vertical-align: middle;
 	border-radius: @control_border_radius 0px 0px @control_border_radius;
 	background-color: @color_element;
-	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 	white-space: nowrap;
 }
 
 header form > label.focus {
 	box-shadow:
-		2px 2px 4px rgba(0, 0, 0, 0.3),
-		inset 0px 0px 1px 1px @color_selection;
+	2px 2px 4px rgba(0, 0, 0, 0.3),
+	inset 0px 0px 1px 1px @color_selection;
 }
 
 header form label svg {
@@ -279,6 +293,8 @@ header form label svg {
 
 header form label a.gps {
 	display: inline-block;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
 header form label a.gps svg {
@@ -297,12 +313,15 @@ header form label a.gps.locked svg {
 header form label input {
 	width: 55vw;
 	vertical-align: top;
-	padding: 0.6em;
+	padding-top: 2.6em;
+	padding-bottom: 2.6em;
+	padding-left: 5px;
 
 	border: 0px;
 	background-color: transparent;
 
 	color: @color_element_text;
+	font-size: 0.7em;
 }
 
 header form input::-moz-focus-inner,
@@ -313,17 +332,18 @@ header form button::-moz-focus-inner {
 
 header form div.controls {
 	display: inline-block;
+	vertical-align: middle;
 }
 
 header form div.controls button {
 	display: inline-block;
-	vertical-align: top;
-	padding: 0.5em 1em;
+	vertical-align: middle;
+	padding: 1.5em 1em;
 
 	border: 0px;
 	border-radius: 0px @control_border_radius @control_border_radius 0px;
-	background-color: @color_button;
-	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	background-color: #75cb1d;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 
 	color: @color_button_text;
 	line-height: 0px;
