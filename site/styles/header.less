@@ -30,13 +30,20 @@
 	to { fill: @color_button; }
 }
 
-header {
+header.home {
 	background-image: url(../images/header-backgroun-07.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
 	min-height:800px;
 	overflow: hidden;
 }
+
+header:not(.home) {
+	background-image: url(../images/search-header-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	overflow: hidden;	
+} 
 
 header div.inner_wrap {
 	height: 200px;
@@ -59,14 +66,20 @@ header:not(.home) div.inner_wrap:after {
 }
 
 
-header section {
+header.home section {
 	position: block;
 	margin-top:30px;
 	margin-bottom:30px;
 
 }
 
-header a.logo {
+header section {
+	position: block;
+	margin-top:20px;
+	margin-bottom:20px;	
+}
+
+header.home a.logo {
 	display: block;
 
 	padding-top: 0.5em;
@@ -79,6 +92,21 @@ header a.logo {
 	width: 450px;
 	height: 150px;
 
+}
+
+header a.logo {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+
+	background-image: url(../images/new-logo.svg);
+	background-repeat: no-repeat;
+	background-size: 350px 100px;
+	background-position: center center;
+
+	width: 350px;
+	height: 100px;
 }
 
 
@@ -97,9 +125,15 @@ header h1 {
 /**
  * Search form
  */
-header form {
+header.home form {
 	display: block;
 	color: @color_header_text;
+}
+
+header:not(.home) form {
+	position: absolute;
+	top: 30px;
+	right:10px;
 }
 
 header.home form {
@@ -143,6 +177,15 @@ header.home form > label {
 	padding-left: 5px;
 	padding-right: 5px;
 	margin-right: 20px;
+}
+
+header form > label {
+	border-radius: @control_border_radius;
+	border:2px solid #94a4a5;
+	font-size: 1.3em;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 10px;
 }
 
 header form label svg {
@@ -220,7 +263,17 @@ header.home form div.controls button {
 	text-transform:uppercase;
 }
 
-header.home form div.controls button svg {
+header form div.controls button {
+	position: relative;
+	padding: 25px 40px;
+	padding-right: 2.8em;
+
+	border-radius: @control_border_radius;
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+
+header form div.controls button svg {
 	display: inline;
 	vertical-align: middle;
 	width: 1.5em;
