@@ -635,7 +635,7 @@ class listing extends Module {
 				$file_name = $images_path.'company_logos/'.$company->id.'.jpg';
 				if (file_exists($file_name))
 					$logo_url = url_GetFromFilePath($file_name); else
-					$logo_url = url_GetFromFilePath(_BASEPATH.'/'.$images_path.'default_logo.svg');
+					$logo_url = url_GetFromFilePath(_BASEPATH.'/'.$images_path.'new-logo.svg');
 
 				// prepare parameters
 				$params = array(
@@ -675,7 +675,7 @@ class listing extends Module {
 					$file_name = $images_path.'company_logos/'.$company->id.'.jpg';
 					if (file_exists($file_name))
 						$logo_url = url_GetFromFilePath($file_name); else
-						$logo_url = url_GetFromFilePath(_BASEPATH.'/'.$images_path.'default_logo.svg');
+						$logo_url = url_GetFromFilePath(_BASEPATH.'/'.$images_path.'new-logo.svg');
 
 					// prepare parameters
 					$params = array(
