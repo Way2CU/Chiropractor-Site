@@ -7,13 +7,13 @@
  */
 
 footer {
-	background-image: url(../images/footer_background.jpg);
+	background-image: url(../images/footer-03.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
 }
 
 footer div.inner_wrap {
-	min-height: 700px;
+	min-height: 814px;
 }
 
 footer div.copyright {
@@ -30,20 +30,27 @@ footer div.copyright div.inner_wrap {
 
 footer div.inner_wrap div.content_container {
 	position: absolute;
-	max-width: 700px;
-	top: 55px;
-	right: 400px;
+	max-width: 500px;
+	top: 100px;
+	right:50%;
+	margin-right: -250px;
 
 	color: @color_title;
-	text-align: right;
+	text-align: center;
 }
 
 footer div.inner_wrap div.content_container h2 {
 	margin: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	text-transform:uppercase;
+	width: 80%;
 }
 
 footer div.inner_wrap div.content_container span {
 	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	font-size: 1.2rem;
 }
 
@@ -56,13 +63,10 @@ footer div.inner_wrap div.content_container div {
 	margin-right: auto;
 	padding: 10px;
 
-	background-color: @color_title;
-	background-image:
-		url(../images/mobile_friendly.svg),
-		url(../images/qr_code.svg);
-	background-repeat: no-repeat, no-repeat;
-	background-position: center 175px, center 10px;
-	background-size: 70% auto;
+	background-image:url(../images/chiropractors.expert.png);
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-size: 200px 200px;
 }
 
 footer div.inner_wrap div.content_container:hover ~ div.mobile_pic {
@@ -73,10 +77,10 @@ footer div.inner_wrap div.mobile_pic {
 	position: absolute;
 	width: 212px;
 	height: 375px;
-	top: 133px;
-	right: 114px;
+	top: 245px;
+	right: 105px;
 
-	background-image: url(../images/mobile_mockup.jpg);
+	background-image: url(../images/mobile-mockup.png);
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: auto 375px;
@@ -94,8 +98,8 @@ footer div.left_container {
 	position: relative;
 
 	border: 1px solid fadeout(@color_title, 40%);
-
-	color: @color_footer_text;
+	background-color: white;
+	color: @color_title;
 	text-align: center;
 }
 
@@ -146,7 +150,7 @@ footer div.left_container h4 {
 	margin-top: 10px;
 	padding-top: 5px;
 
-	border-top: 1px solid fadeout(@color_footer_text, 40%);
+	border-top: 1px solid fadeout(@color_title, 40%);
 	font-size: 1rem;
 	font-weight: normal;
 	font-family: Roboto;
@@ -249,7 +253,14 @@ footer small {
 	left: 0px;
 	top: 200px;
 
+	background-image: url(../images/way2cu-logo.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 45px 45px;
+
 	padding-left: 3.2em;
+	padding-top: 10px;
+	padding-bottom: 10px;
 
 	color: @color_title;
 	direction: ltr;
@@ -263,7 +274,7 @@ footer small a {
 
 footer small a:focus,
 footer small a:hover {
-	color: @color_footer_text;
+	color:#449bb5;
 }
 
 footer small svg {
