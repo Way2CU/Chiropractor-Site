@@ -31,9 +31,9 @@
 }
 
 header {
-	background-image: url(../images/header_background.jpg);
+	background-image: url(../images/header-backgroun-07.jpg);
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center top;
 	overflow: hidden;
 }
 
@@ -57,68 +57,40 @@ header:not(.home) div.inner_wrap:after {
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-header.home:before {
-	position: absolute;
-	width: 60%;
-	max-width: 1066px;
-	height: 100%;
-	right: 0px;
-	top: 0px;
-	content: '';
-
-	background-image: url(../images/header_shade.svg);
-	background-repeat: no-repeat;
-	background-position: left top;
-	background-size: 1066px 600px;
-}
 
 header section {
-	position: absolute;
-	top: 30px;
-	left: 0px;
+	position: block;
+	margin-top:30px;
+	margin-bottom:30px;
+
 }
 
 header a.logo {
 	display: block;
 
-	padding-left: 55px;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 
-	background-image: url(../images/logo.svg);
+	background-image: url(../images/new-logo.svg);
 	background-repeat: no-repeat;
-	background-size: 45px 45px;
-	background-position: left center;
+	background-size: 450px 150px;
+	background-position: center center;
+	width: 450px;
+	height: 150px;
 
-	color: @color_header_text;
-	font-size: 2rem;
-	font-weight: bold;
-	font-family: Roboto Slab;
-	line-height: 100%;
-	text-decoration: none;
-	text-transform: uppercase;
 }
 
-header.home a.logo {
-	top: 50px;
-	margin-bottom: 50px;
-	padding-left: 75px;
-
-	background-size: 65px 65px;
-	font-size: 2.5rem;
-}
 
 header h1 {
 	display: block;
-	width: 400px;
+	width: 500px;
 
 	margin: 0px;
 	padding: 0px;
 
 	color: @color_header_text;
 	font-size: 3.2em;
-	text-transform: uppercase;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	font-weight:100;
 }
 
 /**
@@ -126,10 +98,6 @@ header h1 {
  */
 header form {
 	display: block;
-	position: absolute;
-	right: 0px;
-	top: 40px;
-
 	color: @color_header_text;
 }
 
@@ -144,7 +112,8 @@ header form > span {
 
 header.home form > span {
 	display: block;
-	padding-bottom: 5px;
+	padding-bottom: 15px;
+	font-size: 1.3em;
 }
 
 header form label {
@@ -152,123 +121,9 @@ header form label {
 	vertical-align: top;
 }
 
-header form div.vehicle_type {
-	display: inline-block;
-	vertical-align: top;
-	margin-right: 40px;
-}
-
-header.home form div.vehicle_type {
-	display: block;
-	margin-bottom: 20px;
-	margin-right: 0px;
-}
-
-header form div.vehicle_type > span {
-	display: none;
-}
-
-header.home form div.vehicle_type > span {
-	display: block;
-	padding-bottom: 5px;
-}
-
-header form div.vehicle_type label {
-	margin-right: 10px;
-}
-
-header form div.vehicle_type label:last-of-type {
-	margin-right: 0px;
-}
-
-header form div.vehicle_type input {
-	display: none;
-}
-
-header form div.vehicle_type label span {
-	display: inline-block;
-	padding: 0px 8px;
-
-	border-radius: @control_border_radius;
-	background-color: fade(@color_element, 30%);
-	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-
-	font-size: 0px;
-	transition: all 0.3s;
-}
-
-header form div.vehicle_type label span:after {
-	display: inline-block;
-	content: '';
-	.vehicle_type_icon_size(41px);
-
-	background-image: url(../images/vehicle_type_icons.svg);
-	background-repeat: no-repeat;
-	transition: all 0.3s;
-}
-
-header.home form div.vehicle_type label span:after {
-	.vehicle_type_icon_size(50px);
-}
-
-header form div.vehicle_type label span:hover,
-header form div.vehicle_type input:focus + span {
-	background-color: mix(fade(@color_element, 30%), fade(@color_selection, 70%));
-}
-
-header form div.vehicle_type input:checked + span {
-	background-color: @color_selection;
-}
-
-header form div.vehicle_type input[value=car] + span:after {
-	.vehicle_type_icon_position(41, 0, false);
-}
-
-header form div.vehicle_type input[value=car]:checked + span:after {
-	.vehicle_type_icon_position(41, 0, true);
-}
-
-header form div.vehicle_type input[value=motorcycle] + span:after {
-	.vehicle_type_icon_position(41, 1, false);
-}
-
-header form div.vehicle_type input[value=motorcycle]:checked + span:after {
-	.vehicle_type_icon_position(41, 1, true);
-}
-
-header form div.vehicle_type input[value=truck] + span:after {
-	.vehicle_type_icon_position(41, 2, false);
-}
-
-header form div.vehicle_type input[value=truck]:checked + span:after {
-	.vehicle_type_icon_position(41, 2, true);
-}
-
-header.home form div.vehicle_type input[value=car] + span:after {
-	.vehicle_type_icon_position(50, 0, false);
-}
-
-header.home form div.vehicle_type input[value=car]:checked + span:after {
-	.vehicle_type_icon_position(50, 0, true);
-}
-
-header.home form div.vehicle_type input[value=motorcycle] + span:after {
-	.vehicle_type_icon_position(50, 1, false);
-}
-
-header.home form div.vehicle_type input[value=motorcycle]:checked + span:after {
-	.vehicle_type_icon_position(50, 1, true);
-}
-
-header.home form div.vehicle_type input[value=truck] + span:after {
-	.vehicle_type_icon_position(50, 2, false);
-}
-
-header.home form div.vehicle_type input[value=truck]:checked + span:after {
-	.vehicle_type_icon_position(50, 2, true);
-}
-
 header form > label {
+	display: inline-block;
+	vertical-align: middle;
 	border-radius: @control_border_radius 0px 0px @control_border_radius;
 	background-color: @color_element;
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -281,19 +136,24 @@ header form > label.focus {
 }
 
 header.home form > label {
-	margin-bottom: 30px;
 	border-radius: @control_border_radius;
+	border:2px solid #94a4a5;
 	font-size: 1.3em;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 20px;
 }
 
 header form label svg {
 	display: inline-block;
 	vertical-align: top;
-	width: 1.5em;
-	height: 1.5em;
 
-	padding: 8px;
-	fill: lighten(@color_element_text, 40%);
+	width: 1.1em;
+	height: 1.1em;
+
+	padding-top: 22px;
+	padding-bottom: 22px;
+	fill:#33485d;
 }
 
 header form label a.gps svg {
@@ -310,11 +170,11 @@ header form label a.gps.locked svg {
 }
 
 header form label input {
-	min-width: 300px;
-	padding: 10px 2px;
-
+	min-width: 260px;
+	padding: 25px 2px;
 	border: 0px;
 	background-color: transparent;
+	font-size: 0.8em;
 }
 
 header form input::-moz-focus-inner,
@@ -328,7 +188,8 @@ header form div.controls {
 }
 
 header.home form div.controls {
-	display: block;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 header form div.controls button {
@@ -350,11 +211,12 @@ header form div.controls button svg {
 
 header.home form div.controls button {
 	position: relative;
-	padding: 15px 25px;
+	padding: 22px 50px;
 	padding-right: 2.8em;
 
 	border-radius: @control_border_radius;
-	font-size: 1.3em;
+	font-size: 1.5em;
+	text-transform:uppercase;
 }
 
 header.home form div.controls button svg {
@@ -368,7 +230,7 @@ header.home form div.controls button svg {
 	top: 50%;
 
 	margin-top: -1.5em / 2;
-	fill: @color_header_text;
+	fill: @color_element;
 }
 
 header form div.controls button:focus,
