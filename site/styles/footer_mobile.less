@@ -18,8 +18,8 @@ footer div.left_container {
 
 	padding-top: 3em;
 	padding-bottom: 3em;
-
-	color: @color_footer_text;
+	color: @color_title;
+	background-color:@color_background;
 	text-align: center;
 }
 
@@ -159,9 +159,13 @@ footer small {
 	position: relative;
 
 	padding: 1em;
-	padding-left: 4.2em;
+	padding-left: 8.2em;
 
-	background-color: lighten(@color_footer, 5%);
+	background-color:@color_copyright;
+	background-image: url(../images/way2cu-logo.svg);
+	background-repeat: no-repeat;
+	background-position: 50px center;
+	background-size: 30px 30px;
 
 	color: @color_footer_text;
 	direction: ltr;
