@@ -50,12 +50,6 @@
 
 				<!-- Copyright -->
 				<small>
-					<svg viewBox="0 0 87 100">
-						<use
-							xlink:href="_BASEURL.'/site/images/sprites.svg#icon-way2cu'"
-							cms:eval="xlink:href"
-							/>
-					</svg>
 					<cms:text constant="copyright"/>
 					<a href="http://way2cu.com" target="_blank">
 						<cms:text constant="copyright_company"/>
