@@ -7,13 +7,20 @@
  */
 
 div.features_container {
-	padding-top: 40px;
  	text-align: center;
  }
 
 div.features_container div.feature {
 	display: inline-block;
-	vertical-align: top; max-width: 300px; margin: 0px 20px;
+	vertical-align: top; max-width: 350px; margin: 0px 20px;
+}
+
+div.features_container h2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	color:@color_title;
+	width: 800px;
 }
 
 div.features_container div.feature h3 {
@@ -37,20 +44,19 @@ div.features_container div.feature h3:before {
 	right: 50%;
 
 	border-radius: 50%;
-	background-color: @color_selection;
 	z-index: -1;
 }
 
-div.features_container div.feature:nth-child(1) h3 {
-	background-image: url(../images/icon_search.svg);
+div.features_container div.feature:nth-of-type(1) h3 {
+	background-image: url(../images/icon-call.svg);
 }
 
-div.features_container div.feature:nth-child(2) h3 {
-	background-image: url(../images/icon_phone.svg);
+div.features_container div.feature:nth-of-type(2) h3 {
+	background-image: url(../images/icon-treatment.svg);
 }
 
-div.features_container div.feature:nth-child(3) h3 {
-	background-image: url(../images/icon_truck.svg);
+div.features_container div.feature:nth-of-type(3) h3 {
+	background-image: url(../images/icon-review.svg);
 }
 
 div.features_container div.feature p {
