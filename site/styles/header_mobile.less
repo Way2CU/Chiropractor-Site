@@ -36,12 +36,8 @@ header {
 	left: 0px;
 	right: 0px;
 
-	background-color: @color_button;
-	background-image: url(../images/mobile-header.jpg);
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: 100% auto;
-	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+	background-color:@color_header_text;
+
 
 	-webkit-transform: translateZ(0);
 	z-index: 1000;
@@ -49,7 +45,10 @@ header {
 
 header.home {
 	position: static;
-
+	background-image: url(../images/mobile-header.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100% auto;
 	background-color: white;
 	box-shadow: none;
 }
@@ -71,7 +70,7 @@ header a.logo {
 
 	background-image: url(../images/new-logo.svg);
 	background-repeat: no-repeat;
-	background-size: 250px 50px;
+	background-size: 150px 50px;
 	background-position: left center;
 
 	color: @color_button_text;
@@ -81,6 +80,8 @@ header a.logo {
 	line-height: 100%;
 	text-decoration: none;
 	text-transform: uppercase;
+	width: 150px;
+	height: 50px;
 
 
 }
@@ -105,7 +106,7 @@ header h1 {
 	margin: 0px;
 	padding: 0px;
 
-	color: @color_button_text;
+	color: @color_title;
 	font-size: 0.7em;
 	font-family: Roboto;
 	line-height: 100%;
@@ -115,7 +116,7 @@ header h1 {
 header.home h1 {
 	margin-left: auto;
 	margin-right: auto;
-	color: #33485d;
+	color: #color_title;
 	font-size: 1.5em;
 	font-weight: 100;
 	width: 90%;
@@ -374,7 +375,8 @@ header form div.controls button:active {
  */
 header section nav {
 	position: absolute;
-	top: 0.7em;
+	top: 50%;
+	margin-top: -18.5px;
 	right: 0px;
 }
 
