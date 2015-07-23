@@ -68,12 +68,15 @@ footer div.left_container h4 {
 
 footer article {
 	padding: 1em;
+	background-color:@color_background; 
+	border-top: 1px solid @color_footer_text;
 }
 
 footer article p {
 	font-size: 0.7em;
 	color: @color_footer_text;
 }
+
 
 /**
  * Contact form
@@ -167,18 +170,18 @@ footer small {
 	background-position: 50px center;
 	background-size: 30px 30px;
 
-	color: @color_footer_text;
+	color: @color_button_text;
 	direction: ltr;
 }
 
 footer small a {
-	color: @color_footer_text;
+	color: @color_button_text;
 	transition: all 0.3s;
 }
 
 footer small a:focus,
 footer small a:hover {
-	color: @color_footer_text;
+	color: @color_button_text;
 }
 
 footer small svg {
